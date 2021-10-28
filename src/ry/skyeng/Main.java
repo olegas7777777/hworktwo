@@ -14,41 +14,50 @@ public class Main {
         int egg = 123344432;
         System.out.println(egg);
 
-        long pen = 1343464564;
+        long pen = 1343464564L;
         System.out.println(pen + egg + orange + apple);
 
         float egg3 = 5.55f;
         System.out.println(egg3 );
-        double egg2 = 5.055d;
+        double egg2 = 5.055;
         var box = egg2;
         System.out.println(box);
+        char k= 35;
+        char y= '#';
+        System.out.println(k+"="+y);
 
+         //2 задача
+        float firstBoxer = 78.2f;
+        float secondBoxer = 87.7f;
+        float total = secondBoxer + firstBoxer;
+        System.out.println("Общий вес боксеров "  + total);
 
+          // 3 задача
         int grammsInKilo=1000;
         int banana=5;
-        float oneBanana=80;
+        float weightBanana=80;
         int milk=105;
-        float oneMilk=200/100;
+        float weightMilk=200/100;
         int iceCreamSundae=2;
-        float oneIceCreamSundae=100;
+        float weightIceCreamSundae=100;
         int rawEggs=4;
-        float oneRawEggs=70;
-        float totalBlender= 5*oneBanana+105*oneMilk+2*oneIceCreamSundae+4* oneRawEggs;
+        float weightRawEggs=70;
+        float totalBlender= banana*weightBanana+milk*weightMilk+iceCreamSundae*weightIceCreamSundae+rawEggs*weightRawEggs;
 
         float resultInKilo=totalBlender/(grammsInKilo*1.0f);
-        System.out.println("вес спорт завтрака"+resultInKilo+"кг");
-//3 задача
-        float grammeInKilo=1000f;
+        System.out.println("вес спорт завтрака "+resultInKilo+"кг");
+          //4 задача
+        int grammeInKilo=1000;
         int fatAthlete=7;
-        float weightLossDifference=250f;
-        float secondWeightLossDifference=500f;
-        float slimmingTime=7*grammeInKilo/weightLossDifference;
-        float secondslimmingTime=7*grammeInKilo/secondWeightLossDifference;
-        float Diferent= slimmingTime/secondslimmingTime;
-        float avgDay = (slimmingTime+secondslimmingTime)/2;
-        System.out.println( "Дней необходимо"+slimmingTime);
-        System.out.println("Дней необходимо"+secondslimmingTime);
-        System.out.println("Разница "+avgDay);
+        int weightLossDifference=250;
+        int secondWeightLossDifference=500;
+        int slimmingTime= fatAthlete*grammeInKilo/weightLossDifference;
+        int secondslimmingTime=  fatAthlete*grammeInKilo/secondWeightLossDifference;
+        int Diferent= slimmingTime/secondslimmingTime;
+        int avgDay = (slimmingTime+secondslimmingTime)/2;
+        System.out.println( "Дней необходимо "+slimmingTime);
+        System.out.println("Дней необходимо "+secondslimmingTime);
+        System.out.println("Дней в среднем  "+avgDay);
 // 5 задача
         int salaryMary=67760;
         int salaryDen=83690;
@@ -65,8 +74,8 @@ public class Main {
         int salaryNewKrys= (int) (salaryKrys*newCoefficientSalary);
         int salaryTotalKrys=  (salaryNewKrys-salaryKrys)*12;
 
-        System.out.println("Маша теперь получает" +salaryNewMary+  "рублей"+"Годовой доход вырос на"+ salaryTotalMary+"рублей");
-        System.out.println("Маша теперь получает" +salaryNewDen +   "рублей"+"Годовой доход вырос на"+ salaryTotalDen+"рублей");
-        System.out.println("Маша теперь получает" +salaryNewKrys+  "рублей"+"Годовой доход вырос на"+ salaryTotalKrys+"рублей");
+        System.out.println("Маша теперь получает " +salaryNewMary+  " рублей "+" Годовой доход вырос на " + salaryTotalMary+" рублей");
+        System.out.println("Маша теперь получает " +salaryNewDen +   " рублей "+" Годовой доход вырос на " + salaryTotalDen+" рублей");
+        System.out.println("Маша теперь получает " +salaryNewKrys+  " рублей "+" Годовой доход вырос на " + salaryTotalKrys+" рублей");
 }
 }
